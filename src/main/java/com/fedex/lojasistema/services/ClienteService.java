@@ -61,7 +61,7 @@ public class ClienteService {
 		Cliente obj = clienteRepository.findByEmail(email);
 		if (obj == null) {
 			throw new ObjectNotFoundException(
-					"Objeto não encontrado! Id: " + obj.getId() + ", Tipo: " + Cliente.class.getName());
+					"Objeto não encontrado!, Tipo: " + Cliente.class.getName());
 		}
 		return obj;
 	}
